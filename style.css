@@ -1,3 +1,7 @@
+body {
+    background-color: azure;
+}
+
 #social ul li {
     display: inline;
 }
