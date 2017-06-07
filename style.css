@@ -2,6 +2,23 @@ body {
     background-color: azure;
 }
 
+header {
+
+}
+
+.header-strip {
+    background: url(menu-bar-colors.png) 0 0 repeat-x;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    animation-name: animateColorBar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 #social ul li {
     display: inline;
 }
@@ -17,4 +34,16 @@ body {
     line-height: 48px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+@keyframes animateColorBar {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
